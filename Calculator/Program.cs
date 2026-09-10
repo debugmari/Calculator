@@ -10,17 +10,17 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            int num1, num2, result;
+            Double num1, num2, result;
             Console.WriteLine("Welcome to the Calculator!");
 
             Console.WriteLine("Enter the first number:");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            num1 = Convert.ToInt64(Console.ReadLine());
             /* Console.Readline() reads the user input from the console and returns it as a string.
-             * Convert.ToInt32() converts the string input to an integer. If the user enters a non-integer value, this will throw a FormatException.
+             * Convert.ToInt64() converts the string input to an double. If the user enters a non-numerical value, this will throw a FormatException.
              */
 
             Console.WriteLine("Enter the second number:");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt64(Console.ReadLine());
 
             Console.WriteLine("What type of operation do you want to perform? (+, -, *, /)");
             Console.WriteLine("Enter a character:");
